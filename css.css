@@ -1,0 +1,188 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* Header Content */
+.header {
+	background-color: blue;
+}
+
+/* Header Navagation */
+
+/* Logo */
+.header-logo{
+	display: block;
+	margin-right: auto
+}
+
+/* End of Logo */
+
+.header-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.header-nav li { 
+	display: inline-block; 
+}
+
+.header-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.header-nav li a:hover {
+	background-color: black;
+	color: white;
+	transition: background-color 0.6s ease;
+}
+/* End of Header Navagation /*
+
+/* End of Header Content */
+
+/* Main Page Content */
+.main {
+	background-color: black;
+	color: white
+}
+
+/* Logo */
+.main-logo {
+	display: block;
+	margin-left: auto;
+	margin-right: auto
+}
+
+/* End of Logo */
+
+/* Main Page Navagation */
+.main-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.main-nav li { 
+	display: inline-block; 
+}
+
+.main-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.main-nav li a:hover {
+	background-color: darkslategray;
+	color: white;
+	transition: background-color 0.6s ease;
+}
+/* End of Main Page Navagation */
+
+/* End of Main Page Contect */
+
+/* Footer Page Content */
+.footer {
+	background-color: darkslategrey;
+}
+
+/* Footer Navagation */
+.footer-nav {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.footer-nav li { 
+	display: inline-block; 
+}
+
+.footer-nav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 15px 20px;
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.footer-nav li a:hover {
+	background-color: black;
+	color: white;
+	transition: background-color 0.6s ease;
+}
+/* End of Footer Navagation */
+
+/* End of Footer Content */
+
+.main-chat {
+	margin: 0;
+	padding: 0;
+	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+	background-color: black;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-items: stretch;
+	height: 100vh;
+}
+
+.message-container {
+	width: flex;
+	flex-direction: column;
+	height: flex;
+	background: black;
+	border-radius: 12px;
+	color: white
+}
+
+.message-body {
+	flex: 1;
+	overflow-y: auto
+}
+
+.message-body div{
+	max-width: 100%;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background: blue;
+	align-self: center;
+}
+
+.input-container {
+	display: flex;
+	padding: 10px;
+	background: blue;
+	border-top: 1px solid white;
+	margin-top: auto;
+}
+
+.input-container button{
+	padding: 10px 15px;
+	background: blue;
+	outline: none;
+	border-style: none;
+	border-radius: 20px;
+	cursor: pointer;
+	color: white;
+	margin-left: 10px;
+}
+
+.input-container input {
+	flex: 1;
+	border-radius: 8px;
+	outline: none;
+	border: 1px solid white;
+	padding: 0px 15px
+}
