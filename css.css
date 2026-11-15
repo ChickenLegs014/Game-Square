@@ -12,15 +12,10 @@
 	color: white;
 }
 
-/* Header Navagation */
-
-/* Logo */
 .header-logo{
 	display: block;
 	margin-right: auto
 }
-
-/* End of Logo */
 
 .header-nav {
 	list-style-type: none;
@@ -28,7 +23,7 @@
 	padding: 0;
 	overflow: hidden;
 	text-align: center;
-	bottom-border: 3px solid black;
+	border-bottom: 3px solid black;
 }
 
 .header-nav li { 
@@ -49,11 +44,10 @@
 	color: white;
 	transition: background-color 0.6s ease;
 }
-/* End of Header Navagation /*
 
 /* End of Header Content */
 
-/* Main Page Content */
+/* Main Content */
 .main {
 	background-color: black;
 	color: white;
@@ -62,16 +56,12 @@
 	padding: 20px
 }
 
-/* Logo */
 .main-logo {
 	display: block;
 	margin-left: auto;
 	margin-right: auto
 }
 
-/* End of Logo */
-
-/* Main Page Navagation */
 .main-nav {
 	list-style-type: none;
 	margin: 0;
@@ -99,13 +89,13 @@
 }
 
 .container {
-    width: 85%;               /* Spans 80% of screen width */
-    margin: 15px auto; /* 'auto' left/right margins center the container */
+    width: 85%;
+    margin: 15px auto;
 	text-align: center;
     background-color: #0B0441;
-    padding: 10px;            /* Inner spacing inside the white box */
-    border: 1px solid white;   /* Light gray outer line */
-    border-radius: 25px;	/* Slightly rounds the box corners */
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 25px;
 }
 
 .container h1 {
@@ -121,6 +111,9 @@
 	margin: 20px;
 }
 
+/* End of Main Content */
+
+/* Cards */
 .card-grid{
 	display: flex;
 	flex-wrap: wrap;
@@ -129,7 +122,6 @@
 	margin-top: 25px;
 }
 
-/* Container Layout */
 .card-container {
   display: flex;
   gap: 20px;
@@ -138,31 +130,29 @@
   font-family: Aharoni, Congenial Light, Tenorite, Calibri;
 }
  
-
-/* Card Base */
 .card {
   background-color: #ffffff;
   border-radius: 12px;
   width: 310px;
   display: flex;
   flex-direction: column;
-  overflow: hidden; /* Ensures image corners matches the card border radius */
+  overflow: hidden;
 }
 
 .card-image-wrapper {
   width: 100%;
-  height: 180px; /* Adjusts the height to define the upper half of the card */
+  height: 180px;
   overflow: hidden;
 }
 
 .card-image-wrapper img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Crops and scales without stretching */
+  object-fit: cover;
   display: block;
 }
 
-/* Text Content Area */
+/* Card Text */
 .card-content {
   padding: 20px;
   display: flex;
@@ -187,8 +177,7 @@
   text-align: justify; /* Cleans up line wrap spacing */
 }
 
-/* End of Main Page Navagation */
-
+/* End of Card Text */
 
 .profile-wrapper{
 	display: flex;
@@ -237,7 +226,7 @@
 	border-radius: 20px
 }
 
-/* End of Main Page Contect */
+/* End of Cards */
 
 /* Footer Page Content */
 .footer {
@@ -246,7 +235,6 @@
 	padding: 20px;
 }
 
-/* Footer Navagation */
 .footer-nav {
 	list-style-type: none;
 	margin: 0;
@@ -272,14 +260,14 @@
 	color: white;
 	transition: background-color 0.6s ease;
 }
-/* End of Footer Navagation */
 
 /* End of Footer Content */
 
+/* Videos */
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Prevents padding from breaking layout widths */
+    box-sizing: border-box;
 }
 
 html, body {
@@ -294,7 +282,7 @@ body {
 }
 
 main, .body-section {
-    flex: 1; /* Forces the body to fill all available space between header and footer */
+    flex: 1;
 }
 
 .card h3 {
@@ -305,24 +293,24 @@ main, .body-section {
 	color: black;
 }
 .group-buttons li {
-    display: inline-block;     /* Sits list items side-by-side */
+    display: inline-block;
 }
 .group-buttons li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 20px;       /* Clickable hit area size */
-    text-decoration: none;     /* Removes standard link underline */
-    transition: 0.4s;          /* Smooth hover transition speed */
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.4s;
 }
 .group-buttons {
-    list-style-type: none;     /* Removes bullet points */
+    list-style-type: none;
     margin: 0;
     padding: 0;
     background-color: dimgray;
     overflow: hidden;
 	border-bottom: 3px solid white;
-    text-align: center;  /* Centers inline-block list items */
+    text-align: center;
 }
 
 .chat-button h3 a {
@@ -333,43 +321,52 @@ main, .body-section {
 	text-decoration: none;
 }
 
+/* End of Videos */
+
+/* Chat */
 .main-chat {
 	margin: 0;
 	padding: 0;
 	font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
 	background-color: black;
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 	align-items: stretch;
-	height: 100vh;
+	flex: 1;
+	min-height: 0;
 }
 
 .message-container {
-	width: flex;
+	display: flex;
 	flex-direction: column;
-	height: flex;
-	background: black;
-	border-radius: 12px;
-	color: white
+	flex: 1;
+	min-height: 0;
+	overflow: hidden;
+	color: white;
+	text-align: left;
 }
 
 .message-body {
 	flex: 1;
-	overflow-y: auto
+	overflow-y: auto;
+	display: flex;
+	flex-direction: column;
 }
 
 .message-body div{
-	max-width: 100%;
+	max-width: 85%;
 	margin: 10px;
 	padding: 10px;
 	border-radius: 20px;
 	background: blue;
-	align-self: center;
+	align-self: flex-end;
+	word-wrap: break-word;
 }
 
 .input-container {
 	display: flex;
+	width: 100%;
+	border-radius: 15px;
 	padding: 10px;
 	background: blue;
 	border-top: 1px solid white;
@@ -392,5 +389,93 @@ main, .body-section {
 	border-radius: 8px;
 	outline: none;
 	border: 1px solid white;
-	padding: 0px 15px
+	padding: 10px 15px;
+	font-size: 16px;
+	min-width: 0;
+}
+
+/* End of Chat */
+
+/* ===== Phones ===== */
+@media (max-width: 600px) {
+
+	/* Header */
+	.header { padding: 12px 0; }
+	.header h2 { font-size: 1.15rem; }
+	
+	/* End of Header */
+
+	/* Main Content */
+	.main { padding: 6px; }
+
+	.container {
+		width: 100%;
+		margin: 8px auto;
+		padding: 8px;
+		border-radius: 18px;
+	}
+
+	.container h1 { margin: 12px; font-size: 1.6rem; }
+	.container p { margin: 12px; }
+
+	.main-logo { max-width: 60%; height: auto; }
+	
+	/* End of Main Content */
+
+	/* Cards */
+	.card-grid { gap: 10px; }
+	.card { width: 100%; max-width: 100%; }
+	.card-container { width: 100%; padding: 8px 0; }
+	.card-image-wrapper { height: 160px; }
+	
+	/* End of Cards */
+
+	/* Contact/About */
+	.profile-wrapper {
+		flex-direction: column;
+		gap: 20px;
+	}
+	.profile-image,
+	.profile-bio {
+		flex: none;
+		width: 100%;
+		min-width: 0;
+	}
+	.profile-image img {
+		max-width: 280px;
+		margin: 0 auto;
+		display: block;
+	}
+	.skills-block { margin-right: 0; }
+	
+	/* End of Contact/About */
+
+	/* Chat */
+	.message-body div { max-width: 90%; margin: 6px; }
+	.input-container { padding: 8px; }
+	.input-container button { padding: 10px 12px; margin-left: 6px; }
+	
+	/* End of Chat */
+	
+	/* Group Buttons */
+	.group-buttons li { display: block; }
+	.group-buttons li a { padding: 14px; }
+	
+	/* End of Group Buttons
+	
+	/* Nav links */
+	.header-nav { overflow: visible; }
+	.header-nav li a,
+	.main-nav li a,
+	.footer-nav li a {
+		padding: 10px;
+		font-size: 0.9rem;
+	}
+	
+	/* End of Nav Links */
+
+	/* Footer */
+	.footer { padding: 12px; }
+	
+	/* End of Footer */
 }
